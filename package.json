@@ -1,0 +1,16 @@
+{
+  "name": "bi-portal",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
