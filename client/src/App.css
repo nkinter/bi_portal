@@ -26,3 +26,15 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/*This is for the filtered list feature */
+.filter-list {
+  padding: 100px;
+  font-family: 'Avenir LT Std', sans-serif;
+}
+
+.form-control {
+  font-size: 2rem;
+  padding: 25px 15px;
+}
+/* End */

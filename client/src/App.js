@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FilteredList from './components/filteredList';
 
 class App extends Component {
     state = {
@@ -30,6 +31,7 @@ class App extends Component {
                     <h1 className="App-title">Welcome to React</h1>
                 </header>
                 <p className="App-intro">{this.state.response}</p>
+                <FilteredList/>
             </div>
         );
     }
