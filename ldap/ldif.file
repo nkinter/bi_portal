@@ -1,0 +1,68 @@
+dn: dc=corp,dc=pgcore,dc=com
+objectClass: domain
+objectClass: top
+dc: bluestembrands
+
+dn: ou=Users,dc=corp,dc=pgcore,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Users
+
+dn: ou=Groups,dc=corp,dc=pgcore,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Groups
+
+dn: cn=Neill.Kinter,ou=Users,dc=corp,dc=pgcore,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Neill Kinter
+sn: Kinter
+ou: Admin
+description: 19650324000000Z
+employeeNumber: 9
+givenName: Neill
+mail: neill.kinter@bluestembrands.com
+o: Eden Prarie
+telephoneNumber: 169-637-3314
+telephoneNumber: 907-547-9114
+uid: Neill.Kinter
+userPassword:: catch22
+
+dn: cn=Jane.Doe,ou=Users,dc=corp,dc=pgcore,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Jane Doe
+sn: Doe
+ou: Author
+description: 19650324000000Z
+employeeNumber: 12
+givenName: Jane
+mail: jane.doe@bluestembrands.com
+o: Eden Prarie
+telephoneNumber: 169-637-3314
+telephoneNumber: 907-547-9114
+uid: Jane.Doe
+userPassword:: catch22
+
+dn: cn=John.Wick,ou=Users,dc=corp,dc=pgcore,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: John Wick
+sn: Wick
+ou: Reviewer
+description: 19650324000000Z
+employeeNumber: 8
+givenName: John
+mail: john.wick@bluestembrands.com
+o: Eden Prarie
+telephoneNumber: 169-637-3314
+telephoneNumber: 907-547-9114
+uid: John.Wick
+userPassword:: catch22
