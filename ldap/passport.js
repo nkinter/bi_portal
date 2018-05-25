@@ -4,6 +4,7 @@
 
 const passport = require('passport');
 const LdapStrategy = require('passport-ldapauth');
+const configKeys = require('../config/keys');
 
 let _dn;
 let _ldapurl;
@@ -42,8 +43,8 @@ const init = function (dn, ldapurl, router, findFunc, insertFunc, loginUrl, logo
                 const opts = {
                     server: {
                         url: _ldapurl,
-                        bindDn: `uid=admin,ou=system`,
-                        bindCredentials: `secret`,
+                        bindDn: configKeys.ldap.binddn,
+                        bindCredentials: configKeys.ldap.bindsecret,
                         searchBase: _dn,
                         searchFilter: `uid=${req.body.username}`,
                         reconnect: true
